@@ -2,7 +2,7 @@
 A easy-to-deploy project for ss-kcp.
 
 ## Prerequisite
-0. Buy your oversea [Linux cloud server](https://www.vultr.com/), and get *your_server_ip*.
+0. Buy your oversea Linux cloud server, and get *your_server_ip*.
 1. Install docker:
 ```shell
 curl -fsSL https://get.docker.com -o get-docker.sh
