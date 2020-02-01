@@ -29,7 +29,7 @@ docker-compose up -d
   * Encryption: chacha20
   * Password: *your_ss_password*
   * Plugin: kcptun
-  * Plugin Opts: key=your_kcp_key;crypt=aes;mode=fast3;mtu=1350;sndwnd=1024;rcvwnd=1024;datashard=10;parityshard=3;dscp=0
+  * Plugin Opts: key=*your_kcp_key*;crypt=aes;mode=fast3;mtu=1350;sndwnd=1024;rcvwnd=1024;datashard=10;parityshard=3;dscp=0
   * Remarks: ss-kcp
 
 * Windows 10 [ss-windows](https://github.com/shadowsocks/shadowsocks-windows/releases/tag/4.1.9.2), [kcptun](https://github.com/shadowsocks/kcptun/releases/tag/v20170718)
