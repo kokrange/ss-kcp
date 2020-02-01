@@ -30,3 +30,9 @@ docker-compose up -d
   * Plugin: kcptun
   * Plugin Opts: key=your_kcp_key;crypt=aes;mode=fast3;mtu=1350;sndwnd=1024;rcvwnd=1024;datashard=10;parityshard=3;dscp=0
   * Remarks: ss-kcp
+
+* Windows 10 [ss-windows](https://github.com/shadowsocks/shadowsocks-windows/releases/tag/4.1.9.2), [kcptun](https://github.com/shadowsocks/kcptun/releases/tag/v20170718)
+  * Extract Shadowsocks-4.1.9.2.zip, copy Shadowsocks.exe.
+  * Extract kcptun-windows-amd64-20170718.tar.gz, rename client_windows_amd64.exe to kcptun.exe, copy kcptun.exe.
+  * Put Shadowsocks.exe and kcptun.exe in the same directory. Then run Shadowsocks.exe
+  * Server Preference is the same as in MacOS.
