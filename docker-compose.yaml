@@ -1,0 +1,18 @@
+version: '2'
+
+services:
+  ss:
+    image: easypi/shadowsocks-libev
+    environment:
+      - METHOD=chacha20
+      - PASSWORD=your_ss_password
+    restart: always
+
+  kcp:
+    image: xtaci/kcptun
+    depends_on:
+      - "ss"
+    ports:
+      - "your_server_port:29900/udp"
+    restart: always
+    command: ["server", "-t", "ss:8388", "--key", "your_kcp_key", "--mode", "fast3"]
