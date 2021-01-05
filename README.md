@@ -1,5 +1,5 @@
 # ss-kcp
-A easy-to-deploy project for ss-kcp.
+An easy-to-deploy project for ss-kcp.
 
 ## Prerequisite
 0. Buy your oversea Linux cloud server, and get *your_server_ip*.
