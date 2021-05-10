@@ -4,7 +4,7 @@ services:
   ss:
     image: easypi/shadowsocks-libev
     environment:
-      - METHOD=chacha20
+      - METHOD=chacha20-ietf-poly1305
       - PASSWORD=your_ss_password
     restart: always
 
@@ -15,4 +15,4 @@ services:
     ports:
       - "your_server_port:29900/udp"
     restart: always
-    command: ["server", "-t", "ss:8388", "--key", "your_kcp_key", "--mode", "fast3"]
+    command: ["server", "-t", "ss:8388", "--key", "your_kcp_key", "--crypt", "salsa20", "--mode", "fast3"]

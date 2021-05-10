@@ -26,10 +26,10 @@ docker-compose up -d
 ## Client configuration
 * MacOS [ssNG](https://github.com/shadowsocks/ShadowsocksX-NG/releases/tag/v1.9.4) Server Preference
   * Address: *your_server_ip* : *your_server_port*
-  * Encryption: chacha20
+  * Encryption: chacha20-ietf-poly1305
   * Password: *your_ss_password*
   * Plugin: kcptun
-  * Plugin Opts: key=*your_kcp_key*;crypt=aes;mode=fast3;mtu=1350;sndwnd=1024;rcvwnd=1024;datashard=10;parityshard=3;dscp=0
+  * Plugin Opts: key=*your_kcp_key*;crypt=salsa20;mode=fast3;mtu=1350;sndwnd=1024;rcvwnd=1024;datashard=10;parityshard=3;autoexpire=3600;dscp=0
   * Remarks: ss-kcp
 
 * Windows 10 [ss-windows](https://github.com/shadowsocks/shadowsocks-windows/releases/tag/4.1.9.2), [kcptun](https://github.com/shadowsocks/kcptun/releases/tag/v20170718)
