@@ -32,8 +32,12 @@ docker-compose up -d
   * Plugin Opts: key=*your_kcp_key*;crypt=salsa20;mode=fast3;mtu=1350;sndwnd=1024;rcvwnd=1024;datashard=10;parityshard=3;autoexpire=3600;dscp=0
   * Remarks: ss-kcp
 
-* Windows 10 [ss-windows](https://github.com/shadowsocks/shadowsocks-windows/releases/tag/4.1.9.2), [kcptun](https://github.com/shadowsocks/kcptun/releases/tag/v20170718)
+* Windows 10 [ss-windows](https://github.com/shadowsocks/shadowsocks-windows/releases/tag/4.1.9.2), [kcptun-windows](https://github.com/shadowsocks/kcptun/releases/tag/v20170718)
   * Extract *Shadowsocks-4.1.9.2.zip*, copy **Shadowsocks.exe**.
   * Extract *kcptun-windows-amd64-20170718.tar.gz*, rename **client_windows_amd64.exe** to **kcptun.exe**, copy **kcptun.exe**.
   * **[IMPORTANT]** Put **Shadowsocks.exe** and **kcptun.exe** in the *SAME* directory. Then run **Shadowsocks.exe**
+  * Server Preference is the same as in MacOS.
+
+* Android [ss-android](https://github.com/shadowsocks/shadowsocks-android/releases/download/v5.2.3/shadowsocks--universal-5.2.3.apk), [kcptun-android](https://github.com/shadowsocks/kcptun-android/releases/download/v1.0.1/kcptun--universal-1.0.1.apk)
+  * Install ss, kcptun on your android device.
   * Server Preference is the same as in MacOS.
