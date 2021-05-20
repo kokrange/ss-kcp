@@ -3,13 +3,13 @@ An easy-to-deploy project for ss-kcp.
 
 ## Prerequisite
 0. Buy your oversea Linux cloud server, and get *your_server_ip*.
-1. Install docker:
+1. Install docker on server:
 ```shell
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 sudo usermod -aG docker $USER
 ```
-2. Install docker compose:
+2. Install docker compose on server:
 ```shell
 sudo curl -L "https://github.com/docker/compose/releases/download/1.25.3/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
