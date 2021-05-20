@@ -16,7 +16,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 ```
 
 ## Server deployment
-1. Change *your_ss_password*, *your_kcp_key* and *your_server_port* in **docker-compose.yaml** to your customized values.
+1. Change **your_ss_password**, **your_kcp_key** and **your_server_port** in **docker-compose.yaml** to your customized values.
 2. Copy **docker-compose.yaml** to your server and run
 ```shell
 docker-compose up -d
